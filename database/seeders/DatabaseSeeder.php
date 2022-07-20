@@ -73,6 +73,14 @@ class DatabaseSeeder extends Seeder
                 "seats" => 5,
                 "doors" => 4,
                 "top_speed"=> 144.2,
+            ],
+            [
+                "manufacturer_id" => $manufacturers_ids[1],
+                "fuel_type_id" => $fuel_types_ids[1],
+                "name" => "Not audi",
+                "seats" => 5,
+                "doors" => 4,
+                "top_speed"=> 145.2,
             ]
         ];
 
