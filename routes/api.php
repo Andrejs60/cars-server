@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\CarController;
+use App\Http\Controllers\FuelTypeController;
+use App\Http\Controllers\ManufacturerController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -22,4 +24,14 @@ use Illuminate\Support\Facades\Route;
 Route::prefix("cars")->controller(CarController::class)->group(function () {
     Route::get("/list", "index");
     Route::get("/get/{car}", "show");
+});
+
+Route::prefix("fuel-types")->controller(FuelTypeController::class)->group(function () {
+    Route::get("/list", "index");
+    Route::get("/get/{fuel_type}", "show");
+});
+
+Route::prefix("manufacturers")->controller(ManufacturerController::class)->group(function () {
+    Route::get("/list", "index");
+    Route::get("/get/{manufacturer}", "show");
 });

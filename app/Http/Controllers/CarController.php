@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Car;
-use App\Http\Resources\CarResource;
 use Illuminate\Http\Request;
-
+use App\Http\Resources\CarResource;
+use App\Models\Car;
 
 class CarController extends Controller
 {
